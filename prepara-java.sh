@@ -5,3 +5,4 @@ sudo apt-update
 sudo apt install openjdk-11-jre-headless 
 cp vps/scripts-inicializacao/ExemploInicialJava.sh aplicativos/
 chmod 777 aplicativos/ExemploInicialJava.sh
+vps/scripts-inicializacao/ajusta-horario.sh
