@@ -1,0 +1,9 @@
+sudo mysql
+
+create database bancopapai;
+
+CREATE USER 'bancopapai'@'%' IDENTIFIED BY 'Banco07Pap!'; // com maiuscula, minuscula, numero e especial
+
+
+GRANT SELECT, INSERT, DELETE ON bancopapai.* TO bancopapai@'%'
+
