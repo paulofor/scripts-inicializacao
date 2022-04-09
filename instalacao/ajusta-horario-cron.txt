@@ -1,0 +1,3 @@
+sudo dpkg-reconfigure tzdata 
+sudo service cron restart
+timedatectl
