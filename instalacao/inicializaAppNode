@@ -1,0 +1,1 @@
+pm2 start /home/ubuntu/apps_nodejs/sisacao/server/server.js --name "sisacao_21049"
