@@ -1,22 +1,28 @@
 
 
-Configuracao no DNS
-A @ 191.252.92.222 CNAME feo palfmarketing.online
 
-CNAME feo palfmarketing.online
+Configuracao no DNS
+
+A @ 191.252.92.222 <dominio> 60
+CNAME <produto> <dominio> 300
+
 
 
 Certificação usando o certbot:
-sudo certbot certonly --manual --preferred-challenges=dns -d '*.palfmarketing.online' -m paulofore@gmail.com
+sudo certbot certonly --manual --preferred-challenges=dns -d '*.<dominio>' -m paulofore@gmail.com
+
 
 
 Arquivo de Configuracao - copiar de outro:
 cd /etc/apache2/sites-available
-sudo nano /etc/apache2/sites-available/palfmarketing.online.conf
+sudo nano /etc/apache2/sites-available/<dominio>.conf
+
 
 
 Registrar o arquivo de configuração:
-a2ensite palfmarketing.online.conf
+a2ensite <dominio>.conf
+
+
 
 Restart:
 systemctl reload apache2
