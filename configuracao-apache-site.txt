@@ -10,7 +10,8 @@ CNAME <produto> <dominio> 300
 
 Certificação usando o certbot:
 sudo certbot certonly --manual --preferred-challenges=dns -d '*.<dominio>' -m paulofore@gmail.com
-
+Atuar no desafio:
+TXT _acme-challenge <valor> 300
 
 
 Arquivo de Configuracao - copiar de outro:
